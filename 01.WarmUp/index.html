@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>The Warmup</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <article>
+        <p>
+          <h3 class="main-header">
+            JSON String Escape / Unescape
+          </h3>
+          <p class="description">
+            Escapes or unescapes a JSON string removing traces of offending characters that could prevent parsing.
+
+            The following characters are reserved in JSON and must be properly escaped to be used in strings:
+          </p>
+          <ul class="char-list">
+            <li>Backspace is replaced with \b</li>
+            <li>Form feed is replaced with \f</li>
+            <li>Newline is replaced with \n</li>
+            <li>Carriage return is replaced with \r</li>
+            <li>Tab is replaced with \t</li>
+            <li>Double quote is replaced with \"</li>
+            <li>Backslash is replaced with \\</li>
+            <li>Forward slash is replaced with \/</li>
+          </ul>
+        </p>
+        <label for="text-input">Paste the string to escape or unescape here:</label>      
+        <textarea name="text-input" class="text-input" cols="30" rows="10"></textarea>
+        <div>
+        <button class="btn escape" onclick="escapeJSON()">ESCAPE</button>
+        <button class="btn unescape" onclick="unescapeJSON()">UNESCAPE</button>
+        </div>
+        <label for="text-output" id="label-output" >Escaped string:</label>
+        <textarea name="text-output" class="text-output" cols="30" rows="10" readonly ></textarea>
+      </article>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
