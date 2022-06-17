@@ -68,24 +68,6 @@ header > form > select {
   height: 2rem;
 }
 
-/* header > form > button {
-  border: 1px solid #aaa;
-  border-radius: 0.5rem;
-  background-color: whitesmoke;
-  transition: scale 1s;
-}
-
-header > form > button:hover {
-  background-color: white;
-  transform: scale(101%);
-}
-
-header > form > button:active {
-  box-shadow: 0 0 5px 5px rgb(255, 253, 244) inset;
-  transform: scale(99%);
-} */
-
-
 /* labels on top row of the header */
 label.category,
 label.area,
